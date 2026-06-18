@@ -1,0 +1,1 @@
+This folder contains circuit design using KiCAD.
