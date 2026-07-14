@@ -1405,7 +1405,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Total current per segment 90mA\nTotal current per digit 630mA"
+	(text "Total current per segment 100mA\nTotal current per digit 700mA"
 		(exclude_from_sim no)
 		(at 83.058 107.95 0)
 		(effects
@@ -1483,6 +1483,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 76.2) (xy 190.5 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13e0eddd-aa22-4480-b395-9ddaf2c5f6ce")
+	)
+	(wire
+		(pts
 			(xy 104.14 157.48) (xy 123.19 157.48)
 		)
 		(stroke
@@ -1530,6 +1540,16 @@
 			(type default)
 		)
 		(uuid "1f634744-1ef0-430e-a394-87bb8579a554")
+	)
+	(wire
+		(pts
+			(xy 190.5 48.26) (xy 190.5 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ff06587-52fa-4846-b15c-e14fac6d34ed")
 	)
 	(wire
 		(pts
@@ -1670,6 +1690,16 @@
 			(type default)
 		)
 		(uuid "516869e0-be87-43a7-9d47-dfb44ac0130b")
+	)
+	(wire
+		(pts
+			(xy 190.5 91.44) (xy 190.5 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "559bfaae-95d0-4ee4-a9a6-8de43329dbc9")
 	)
 	(wire
 		(pts
@@ -1853,6 +1883,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 63.5) (xy 190.5 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa25fcca-445b-40fb-8fb9-e2e76c0f3c1f")
+	)
+	(wire
+		(pts
 			(xy 104.14 170.18) (xy 93.98 170.18)
 		)
 		(stroke
@@ -1960,6 +2000,110 @@
 			(type default)
 		)
 		(uuid "fa7517a7-9014-4b25-8760-a61d1b8f1be3")
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 190.5 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0335123f-e095-437e-a906-9f5982cfc4e7")
+		(property "Reference" "R10"
+			(at 193.04 58.4199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330Ω"
+			(at 193.04 60.9599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 191.516 59.944 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "kicad-embed://C23138.pdf"
+			(at 190.5 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 190.5 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR Part" "0603WAF3300T5E"
+			(at 190.5 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "C23138"
+			(at 190.5 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9e3d23b0-0473-4b65-8358-cb63c18797c6")
+		)
+		(pin "1"
+			(uuid "fa2c9b3c-9584-41ab-8a16-f5253396cd4d")
+		)
+		(instances
+			(project "light-panel"
+				(path "/0e30cdad-82ec-4068-ae59-974c84c5b947"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -4701,6 +4845,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 190.5 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87646d67-9641-42cb-96dc-c516fa2e9182")
+		(property "Reference" "#PWR021"
+			(at 190.5 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 190.5 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 190.5 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cb3f399e-f2d4-4a1e-8e5b-26fb78e8a25f")
+		)
+		(instances
+			(project "light-panel"
+				(path "/0e30cdad-82ec-4068-ae59-974c84c5b947"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 93.98 152.4 90)
 		(unit 1)
@@ -4930,6 +5152,84 @@
 			(project "light-panel"
 				(path "/0e30cdad-82ec-4068-ae59-974c84c5b947"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 190.5 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a44dcb5-4d34-46d5-b361-3747735ba0e5")
+		(property "Reference" "#PWR022"
+			(at 190.5 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 190.5 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7f39637f-84e2-4079-a3a0-293405314ac0")
+		)
+		(instances
+			(project "light-panel"
+				(path "/0e30cdad-82ec-4068-ae59-974c84c5b947"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -5357,7 +5657,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -6280,6 +6580,108 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 190.5 72.39 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d5a4385d-0b93-4ddb-b630-deb26cc30e7a")
+		(property "Reference" "D19"
+			(at 187.96 72.644 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "KT-0603R"
+			(at 186.69 73.9775 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 190.5 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "kicad-embed://C2286.pdf"
+			(at 190.5 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 190.5 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "/home/tam/Downloads/led.lib"
+			(at 190.5 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "<unknown>"
+			(at 190.5 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "68ff84c9-6aed-4aac-a01f-83c8b93ac1c5")
+		)
+		(pin "1"
+			(uuid "ebde6b30-6573-4fe5-8f1b-ca2a407f9470")
+		)
+		(instances
+			(project "light-panel"
+				(path "/0e30cdad-82ec-4068-ae59-974c84c5b947"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 177.8 59.69 0)
 		(unit 1)
@@ -6762,6 +7164,108 @@
 			(project "light-panel"
 				(path "/0e30cdad-82ec-4068-ae59-974c84c5b947"
 					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 190.5 87.63 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f02c9560-acfc-4a2f-9f10-da7cde4265f3")
+		(property "Reference" "D20"
+			(at 187.96 87.884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "KT-0603R"
+			(at 186.69 89.2175 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 190.5 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "kicad-embed://C2286.pdf"
+			(at 190.5 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 190.5 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "/home/tam/Downloads/led.lib"
+			(at 190.5 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "<unknown>"
+			(at 190.5 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b01b5a10-ef3f-4470-9ce5-d2c762a6e5a5")
+		)
+		(pin "1"
+			(uuid "5918acd6-75db-4346-9350-6bc63bb9196e")
+		)
+		(instances
+			(project "light-panel"
+				(path "/0e30cdad-82ec-4068-ae59-974c84c5b947"
+					(reference "D20")
 					(unit 1)
 				)
 			)
